@@ -1,0 +1,19 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+.fluid-container {
+  width:100%;
+  height:auto;
+  line-height:1.5;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.form {
+  display:flex;
+  flex-direction:column;
+}
