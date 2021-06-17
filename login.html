@@ -4,7 +4,6 @@
     <title>login</title>
     <link rel="stylesheet" href="login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/706f59f6a5.js" crossorigin="anonymous"></script>        
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
   </head>
@@ -13,21 +12,34 @@
       <div class="container">
         <div class="header-container">
           <div class="image-container">
-            <span><i class="fab fa-github"></i></span>
+            <span><i class="fab fa-github github-large"></i></span>
           </div>
           <div class="text-container">
             <p>Sign in to Github</p>
           </div>
         </div>
+        <div class="error">
+          <span class="issues"></span>
+        </div>
         <div class="form-container">
           <form action="profile.html" class="form">            
-            <label for="username">Username or email asddress</label>
-            <br/>
-            <input type="text" id="username" name="username"/>
-            <span class="issues"></span> 
-            <br/>
+            <label for="username" style="font-size:13px; color:rgb(121, 122, 121)">Username or email asddress</label>
+            <input type="text" id="username" name="username"/> <br/>
+
+            <label for="token" style="font-size:13px; color:rgb(121, 122, 121)">SSH token</label>
+            <input type="password" id="token" name = "token"><br/>
+
             <input type="submit" value="Sign in" class='submit'/>
           </form>
+        </div>
+
+        <div class="footer">
+          <ul class="footer-list">
+            <li class="footer-item"><a href="#">Terms</a></li>
+            <li class="footer-item"><a href="#">Privacy</a></li>
+            <li class="footer-item"><a href="#">Security</a></li>
+            <li class="footer-item"><a href="#" class="footer-link">Contact github</a></li>
+          </ul>
         </div>
       </div>
     </div>

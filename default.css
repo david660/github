@@ -13,12 +13,14 @@ nav {
   align-items:center;
   font-size:14px;
   line-height:1.5;
-  height:62.5px;
+  height:62px;
+  width:100%;
 }
 
 .nav-bar {
   display:flex;
-  width:1000px;
+  width:80%;
+  position:relative;
 }
 
 .nav-list {
@@ -32,26 +34,20 @@ nav {
 
 .log-in-out {
   display:flex;
-  width:100px;
+  width:15%;
   justify-content: space-between;
   margin-right:20px;
 }
 
 .search {
-  border:1px solid #e1e4e8;
-  border-radius:3px;
-  background-color:transparent;
-  right:20px;
-  line-height:1.8;
-  padding-left:10px;
+  width:100%;
 }
-
 .search:focus {
   outline:1px solid #6cc644;
   border-radius:4px;
   border:none;
   background-color:#f5f5f5;
-  width:300px;
+  width:400px;
 }
 .search::placeholder {
   color:#f5f5f5;
@@ -59,6 +55,16 @@ nav {
 
 .logo-search {
   margin-left:20px;
+  font-size:25px;
+}
+
+.search-cont {
+  position:relative;
+  width:30%;
+}
+
+.appear {
+  display:none;
 }
 
 main {
@@ -93,7 +99,16 @@ aside{
 
 .profile {
   width:90%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.profileLink {
+  text-decoration:none;
+  color:#000;
+}
+
 .image{
   width:80%;
   border-radius:50%;
@@ -105,14 +120,20 @@ aside{
   border-radius:50%;
 }
 
+.user-profile{
+  display:flex;
+}
+
+.user-profile-img{
+  width:20px;
+}
+
+
 .small-pics {
   display:block;
   width:100%;
   height:auto;
-}
-
-.repositoryCont {
-  border-bottom:1px solid red;
+  border-radius:50%;
 }
 
 .big-section {
@@ -125,3 +146,18 @@ aside{
 }
 
 
+
+.details {
+  display:flex;
+  width:80%;
+  justify-content:space-between;
+  align-items: center;
+  margin-top: 3px;
+}
+.details-cont {
+  font-size:12px;
+}
+
+.width {
+  width:380px;
+}

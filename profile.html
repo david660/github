@@ -2,7 +2,10 @@
 <html>
   <head>
     <title>Profile</title>
-    <link rel="stylesheet" href="default.css">
+    
+    <link rel="stylesheet" media="screen and (min-width:700px)" href="default.css">
+    <link rel="stylesheet" href="phone.css" media="screen and (min-width:140px) and (max-width:699px)">
+    <link rel="stylesheet" href="general.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/706f59f6a5.js" crossorigin="anonymous"></script>        
@@ -10,6 +13,11 @@
   </head>
   <body>
     <nav>
+      <div class="burger">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
 
       <div class="logo-search">
         <div class="logo-cont"><i class="fab fa-github"></i></div>
@@ -18,19 +26,31 @@
       <div class="nav-bar">
         <div class="search-cont">
           <input type="text" class="search" placeholder="search or jump to..."/>
+          <i class = "fa fa-search"></i>
         </div>
         <ul class='nav-list'>
-          <li>pull requests</li>
+          <li class="appear">Dashboard</li>
+          <li>Pull requests</li>
           <li>Issues</li>
           <li>Codespaces</li>
           <li>MarketPlace</li>
           <li>Explore</li>
+          <li class="appear">Sponsors</li>
+          <li class="appear">Settings</li>
+          <li class="appear">
+            <div class="phone-profile-cont">
+              <a href="#" class="phone-profile-pics">
+                <img src="" class="small-pics" alt="profile">
+                <p class="phone-username"></p>
+              </a>
+            </div>
+          </li>
         </ul>
       </div>
       <div class="log-in-out">
         <p><span><i class="far fa-bell"></i></span></p>
-        <p>+</p>
-        <div class="user-profile">
+        <p class="disappear">+</p>
+        <div class="user-profile disappear">
           <div class="user-profile-img">
             <img src="" alt="small" class="small-pics"/>
           </div>
@@ -45,11 +65,11 @@
           <p> Overview</p>
         </div>
         <div class="navi">
-          <span><i class="fa fa-book-alt"></i></span>
+          <span><i class="fa fa-book"></i></span>
           <p>Repositories</p>
         </div>
         <div class="navi">
-          <span><i class="fa fa-signal-4"></i></span>
+          <span><i class="fa fa-chart-bar"></i></span>
           <p>Projects</p>
         </div>
         <div class="navi">
@@ -64,7 +84,7 @@
               <img class="avatar" src="" alt="avatar"/>
             </div>
             <div class="profile-text">
-              <a class="profileLink"><p class='profile-name'></p></a>
+              <a class="profileLink profile-name"></a>
             </div>
           </div>
         </aside>

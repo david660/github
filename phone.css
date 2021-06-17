@@ -1,0 +1,156 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+.burger {
+  width:25px;
+  height:25px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-right:10px;
+}
+
+.logo-search {
+  justify-self: center;
+  font-size:25px;
+  color:#d1d5da;
+}
+.phone-profile-cont {
+  width:100%;
+}
+.phone-profile-pics {
+  width:100%;
+  display:flex;
+  align-items: center;
+  text-decoration:none;
+  color:#d1d5da;
+}
+.small-pics {
+  width:10%;
+  border-radius:50%;
+}
+
+.appear {
+  display:block;
+}
+
+.line {
+  height:2px;
+  width:80%;
+  background-color:#d1d5da;
+}
+
+.nav-bar {
+  transform: translateY(-150%);
+  flex-direction:column;
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  top:50px;
+  height:90vh;
+  width:100%;
+  background-color:#24292e;
+  color:#d1d5da;
+  transition: 0.5s ease-in;
+}
+
+.search {
+  width:100%;
+}
+
+.search-cont {
+  width:90%;
+}
+
+.disappear {
+  display:none;
+}
+
+nav {
+  background-color:#24292e;
+  position:relative;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  height:50px;
+}
+
+.nav-active {
+  transform:translateY(0%);
+}
+
+.topper {
+  display:none;
+}
+
+.navigator {
+  display:none;
+}
+
+
+.nav-list {
+  list-style: none;
+  height:50vh;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  padding:5px 10px;
+}
+.search:focus{
+  outline:1px solid rgb(167, 167, 235);
+}
+
+.nav-list li {
+  border-top:1px solid #d1d5da;
+  line-height:20px;
+  width:100%;
+  display:flex;
+  align-content:center;
+}
+
+.toggle .line1{
+  transform:rotate(-45deg) translate(-5px, 1px);
+}
+.toggle .line2{
+  display:none;
+}
+.toggle .line3{
+  transform:rotate(45deg) translate(-8px, -4px);
+}
+
+.details {
+  display:flex;
+  width:100%;
+  justify-content:space-between;
+  align-items: center;
+  margin-top:3px;
+}
+
+.details-cont {
+  font-size:13px;
+}
+
+.star-button-cont button {
+  font-size:12px;
+  padding:5px 5px;
+}
+
+.fa-bell {
+  font-size:20px;
+  margin-right:10px;
+  color:#d1d5da;
+}
+
+.repositories {
+  padding:10px;
+}
+
+.repo-description {
+  padding:3px 0;
+}

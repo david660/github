@@ -4,16 +4,91 @@
   box-sizing: border-box;
 }
 
+.header-container {
+  font-size:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.text-container {
+  display:flex;
+  justify-content: center;
+}
+
+
 .fluid-container {
   width:100%;
-  height:auto;
   line-height:1.5;
   display:flex;
   justify-content: center;
   align-items:center;
+  margin-top:30px;
+}
+
+.error {
+  display:flex;
+  justify-content:center;
+  font-size:16px;
+}
+
+.issues {
+  color:red;
+  font-size:smaller;
+}
+
+#username, #token {
+  padding:10px;
+  height:25px;
+  border-radius:3px;
+  border:1px solid rgb(187, 189, 187);
+}
+#username:focus {
+  outline:none;
+}
+
+#token:focus {
+  outline:none;
 }
 
 .form {
   display:flex;
   flex-direction:column;
+  padding:25px;
+}
+
+.form-container {
+  background-color:rgb(238, 247, 238);
+  border-radius:3px;
+}
+
+.submit {
+  background-color:rgb(71, 187, 71);
+  border:none;
+  height:25px;
+  border-radius:3px;
+  color:white;
+}
+.submit:hover {
+  background-color:rgb(120, 190, 120);
+}
+
+.github-large{
+  font-size:30px;
+}
+
+.footer {
+  margin-top:20px;
+}
+
+.footer-list {
+  display:flex;
+  list-style: none;
+  font-size:10px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.footer-link {
+  text-decoration: none;
 }
