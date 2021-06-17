@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-right:10px;
+  margin-left:10px;
 }
 
 .logo-search {
@@ -133,7 +133,7 @@ nav {
 }
 
 .details-cont {
-  font-size:13px;
+  font-size:9px;
 }
 
 .star-button-cont button {
@@ -153,4 +153,8 @@ nav {
 
 .repo-description {
   padding:3px 0;
+}
+
+.bigRepoCont {
+  padding:10px 10px;
 }
